@@ -4,13 +4,14 @@ class Image extends React.Component {
  constructor(){
       super();
       this.state = {image: "http://www.popoptiq.com/wp-content/uploads/2015/03/marshmallow-man.jpg"};
+
   }
 
   _showImage(newBook){
     let currentImage = this.state.image;
 
-  if (currentImage === "http://www.popoptiq.com/wp-content/uploads/2015/03/marshmallow-man.jpg"){
-    this.setState({image: ""});
+  if (currentImage){
+    this.setState({image: null});
 } else
 {
       this.setState({image: "http://www.popoptiq.com/wp-content/uploads/2015/03/marshmallow-man.jpg"});
